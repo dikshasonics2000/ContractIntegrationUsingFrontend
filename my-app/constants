@@ -1,0 +1,104 @@
+export const CONTRACT_ADDRESS = "0xf08bA155B3B4f487769B47a51A3C6D8d8E9E6F03";
+export const abi =[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_firstName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_scndName",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "_admNo",
+				"type": "int256"
+			}
+		],
+		"name": "setDetails",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "scndName",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "admNo",
+						"type": "int256"
+					}
+				],
+				"internalType": "struct details.student",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "int256",
+				"name": "_admNo",
+				"type": "int256"
+			}
+		],
+		"name": "getDetails",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "scndName",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "admNo",
+						"type": "int256"
+					}
+				],
+				"internalType": "struct details.student",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_a",
+				"type": "string"
+			}
+		],
+		"name": "printHello",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	}
+];
